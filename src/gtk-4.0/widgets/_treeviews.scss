@@ -1,7 +1,7 @@
 treeview {
     &.view.cell {
         &:selected {
-            background: rgba($fg-color, 0.15);
+            background: #{'alpha(@fg_color, 0.15)'};
         }
 
         &:focus:selected {

@@ -4,7 +4,7 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
-    color: $fg-color;
+    color: #{'@fg_color'};
     font: initial;
     letter-spacing: initial;
     min-width: rem(150px);
@@ -12,7 +12,7 @@
     padding: rem(6px) rem(12px);
 
     &:disabled {
-        color: $insensitive-fg-color;
+        color: #{'@insensitive_fg_color'};
 
         accelerator,
         .keycap {
@@ -22,11 +22,11 @@
 
     &:hover {
         box-shadow: none;
-        background-color: rgba($fg_color, 0.15);
+        background-color: #{'alpha(@fg_color, 0.15)'};
     }
 
     &.destructive-action {
-        color: $error-color;
+        color: #{'@error_color'};
 
         &:hover {
             background-color: rgba($error-color, 0.2);
@@ -70,12 +70,12 @@ popover.background {
     > arrow,
     > contents {
         background-clip: padding-box;
-        background-color: bg_color(2);
+        background-color: #{'@bg_color_2'};
         border: 1px solid $toplevel-border-color;
         box-shadow:
             outset-highlight(),
             shadow(2);
-        color: $fg-color;
+        color: #{'@fg_color'};
     }
 
     > contents {
@@ -104,16 +104,16 @@ popover.background {
             &.top {
                 background:
                     linear-gradient(
-                        bg_color(2) 0%,
-                        rgba(bg_color(2), 0) 50%
+                        #{'@bg_color_2'} 0%,
+                        #{'alpha(@bg_color_2, 0)'} 50%
                     );
             }
 
             &.bottom {
                 background:
                     linear-gradient(
-                        rgba(bg_color(2), 0) 50%,
-                        bg_color(2) 100%
+                        #{'alpha(@bg_color_2, 0)'} 50%,
+                        #{'@bg_color_2'} 100%
                     );
             }
         }
@@ -145,7 +145,7 @@ popover.background {
             }
 
             &:disabled {
-                color: $insensitive-fg-color;
+                color: #{'@insensitive_fg_color'};
             }
         }
     }

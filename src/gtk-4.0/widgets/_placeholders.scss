@@ -29,7 +29,7 @@ placeholder {
 
     .title-2 {
         @extend .dim-label;
-        color: $fg-color;
+        color: #{'@fg_color'};
         font-size: 12pt;
         font-weight: initial;
     }

@@ -1,6 +1,6 @@
 infobar {
     revealer > box {
-        background-color: bg-color(1);
+        background-color: #{'@bg_color_1'};
         background-image: -gtk-icontheme("dialog-information-symbolic");
         background-repeat: no-repeat;
         background-size: 16px;

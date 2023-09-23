@@ -1,7 +1,7 @@
 .osd {
-    background-color: rgba($fg-color, 0.9);
+    background-color: #{'alpha(@fg_color, 0.9)'};
     border: none;
-    color: bg-color(1);
+    color: #{'@bg_color_1'};
     padding: rem(6px);
     border-radius: rem(6px);
     box-shadow: shadow(1);
@@ -12,29 +12,29 @@
         &.circular.image-button {
             background: transparent;
             box-shadow: none;
-            color: rgba(bg-color(1), 0.9);
+            color: #{'alpha(@bg_color_1, 0.9)'};
 
             &:active {
-                background: rgba($fg-color, 0.7);
+                background: #{'alpha(@fg_color, 0.7)'};
                 box-shadow: none;
-                color: rgba(bg-color(1), 0.7);
+                color: #{'alpha(@bg_color_1, 0.7)'};
             }
         }
 
         &.circular.image-button {
-            background: $fg-color;
+            background: #{'@fg_color'};
         }
 
         &.text-button {
-            background-color: rgba(bg-color(1), 0.9);
-            color: $fg-color;
+            background-color: #{'alpha(@bg_color_1, 0.9)'};
+            color: #{'@fg_color'};
             border-width: 0;
             box-shadow: none;
 
             &:active {
-                background-color: rgba(bg-color(1), 0.7);
+                background-color: #{'alpha(@bg_color_1, 0.7)'};
                 box-shadow: none;
-                color: rgba($fg-color, 0.7);
+                color: #{'alpha(@fg_color, 0.7)'};
             }
         }
     }
@@ -58,14 +58,14 @@
         &.vertical {
             highlight.bottom,
             highlight.top {
-                background: bg-color(1);
+                background: #{'@bg_color_1'};
                 margin: 0;
             }
         }
 
 
         trough {
-            background: rgba(bg-color(1), 0.3)
+            background: #{'alpha(@bg_color_1, 0.3)'};
         }
     }
 }

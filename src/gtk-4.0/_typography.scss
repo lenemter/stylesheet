@@ -128,7 +128,7 @@ label.h4,
     }
 
     &:backdrop {
-        color: $fg-color;
+        color: #{'@fg_color'};
         opacity: 0.6;
     }
 }
@@ -145,7 +145,7 @@ link {
 }
 
 label:disabled {
-    color: $insensitive-fg-color;
+    color: #{'@insensitive_fg_color'};
 }
 
 :link:hover label {

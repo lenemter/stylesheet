@@ -1,5 +1,5 @@
 %entry {
-    background-color: bg-color(1);
+    background-color: #{'@bg_color_4'};
     background-clip: padding-box;
     border: 1px solid $border-color;
     border-radius: rem(3px);
@@ -9,7 +9,7 @@
     &:disabled {
         background: $insensitive-base-color;
         box-shadow: inset-shadow("disabled");
-        color: $insensitive-fg-color;
+        color: #{'@insensitive_fg_color'};
     }
 
     &.flat {
@@ -52,7 +52,7 @@ entry {
         padding: rem(4px);
 
         &:disabled {
-            color: $insensitive-fg-color;
+            color: #{'@insensitive_fg_color'};
         }
     }
 

@@ -1,5 +1,5 @@
 .inline-toolbar {
-    background-color: bg-color(2);
+    background-color: #{'@bg_color_2'};
     background-image:
         linear-gradient(
             to bottom,
@@ -21,7 +21,7 @@
     }
 
     .sidebar & {
-        background-color: mix(bg-color(3), bg-color(4), 50%);
+        background-color: #{'mix(@bg_color_3, @bg_color_4, 0.5)'};
         background-image:
             linear-gradient(
                 to bottom,

@@ -1,6 +1,6 @@
 list,
 listview {
-    background-color: bg-color(1);
+    background-color: #{'@bg_color_1'};
 
     popover & {
         background-color: transparent;
@@ -9,7 +9,7 @@ listview {
     row {
         &:focus,
         &:selected {
-            background: rgba($fg-color, 0.15);
+            background: #{'alpha(@fg_color, 0.15)'};
         }
 
         &:focus:selected {

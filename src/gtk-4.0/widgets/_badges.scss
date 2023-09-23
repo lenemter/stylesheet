@@ -47,7 +47,7 @@
 
         row:selected:not(:focus) & {
             color: inherit;
-            background: rgba($fg-color, 0.15);
+            background: #{'alpha(@fg_color, 0.15)'};
         }
     }
 }

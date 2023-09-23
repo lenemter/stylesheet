@@ -8,7 +8,7 @@ headerbar {
     @extend %outset-background;
     background-color: #{"@color_primary"};
     border-radius: rem(6px) rem(6px) 0 0;
-    color: $fg-color;
+    color: #{'@fg_color'};
 
     .title {
         // Cannot be a number or fonts break in Flatpak

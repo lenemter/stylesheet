@@ -9,8 +9,8 @@
 @function overshoot-gradient-backdrop ($direction) {
     @return linear-gradient(
         $direction,
-        rgba($fg-color, 0) 80%,
-        rgba($fg-color, 0.15) 100%
+        #{'alpha(@fg_color, 0)'} 80%,
+        #{'alpha(@fg_color, 0.15)'} 100%
     );
 }
 

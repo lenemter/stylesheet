@@ -1,5 +1,5 @@
 window.notification .draw-area {
-    background-color: bg-color(2);
+    background-color: #{'@bg_color_1'};
     border-radius: rem(6px);
     box-shadow:
         outset-highlight(),
@@ -7,7 +7,7 @@ window.notification .draw-area {
         shadow(3);
 
     image {
-        color: rgba($fg-color, 0.78);
+        color: #{'alpha(@fg_color, 0.78)'};
     }
 
     label.title {

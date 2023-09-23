@@ -30,12 +30,12 @@ levelbar {
             }
 
             &:backdrop {
-                background-color: bg-color(4);
+                background-color: #{'@bg_color_4'};
             }
         }
 
         &.empty {
-            background-color: bg-color(0);
+            background-color: #{'@bg_color_0'};
         }
     }
 
@@ -97,7 +97,7 @@ levelbar {
             box-shadow: none;
 
             &.empty {
-                background: rgba($fg-color, 0.2);
+                background: #{'alpha(@fg_color, 0.2)'};
             }
 
             &.filled {
@@ -118,7 +118,7 @@ levelbar {
                 }
 
                 &.high:not(:backdrop) {
-                    background: rgba($fg-color, 0.6);
+                    background: #{'alpha(@fg_color, 0.6)'};
                 }
 
                 &.full:not(:backdrop) {
@@ -130,7 +130,7 @@ levelbar {
                 }
 
                 &:backdrop {
-                    background: rgba($fg-color, 0.2);
+                    background: #{'alpha(@fg_color, 0.2)'};
                 }
             }
         }
@@ -146,7 +146,7 @@ levelbar {
                 }
 
                 &.middle:not(:backdrop) {
-                    background: rgba($fg-color, 0.6);
+                    background: #{'alpha(@fg_color, 0.6)'};
                 }
 
                 &.high:not(:backdrop) {

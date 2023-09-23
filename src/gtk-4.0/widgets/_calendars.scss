@@ -15,7 +15,7 @@ calendar.view {
         }
 
         &.other-month {
-            color: $insensitive-fg-color;
+            color: #{'@insensitive_fg_color'};
         }
 
         &:selected{

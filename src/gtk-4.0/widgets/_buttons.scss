@@ -15,7 +15,7 @@ button {
         box-shadow: none;
 
         &:checked {
-            background: rgba($fg-color, 0.15);
+            background: #{'alpha(@fg_color, 0.15)'};
         }
 
         &:focus {
@@ -39,7 +39,7 @@ button {
         @extend %outset-background;
 
         background-clip: padding-box;
-        background-color: bg-color(0);
+        background-color: #{'@bg_color_0'};
         border: 1px solid $border-color;
         box-shadow:
             outset-highlight("full"),
@@ -164,7 +164,7 @@ button {
     }
 
     &:disabled {
-        color: $insensitive-fg-color;
+        color: #{'@insensitive_fg_color'};
     }
 
     &:backdrop {
