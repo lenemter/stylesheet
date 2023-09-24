@@ -14,10 +14,23 @@ $border-color: rgba(black, 0.2);
 $insensitive-base-color: rgba(0, 0, 0, 0.03);
 
 // Semantic colors
-$error_color: $STRAWBERRY_500;
-$success_color: $LIME_700;
-$warning_color: $BANANA_900;
+$error-color: $STRAWBERRY_500;
+$success-color: $LIME_700;
+$warning-color: $BANANA_900;
 $warning-icon-color: mix($BANANA_500, $BANANA_700, $weight: 50%);
+
+// Inputs
+$bg-color-0: $SILVER_100;
+// Views
+$bg-color-1: white;
+// Background
+$bg-color-2: $SILVER_100;
+// Sidebars and inline toolbars
+$bg-color-3: mix($SILVER_100, $SILVER_300, $weight: 75%);
+// Titlebars and toolbars
+$bg-color-4: $titlebar-color;
+
+$highlight-color: white;
 
 @if $color-scheme == "dark" {
     $titlebar-color: mix($BLACK_500, $BLACK_700, $weight: 65%);
@@ -30,43 +43,15 @@ $warning-icon-color: mix($BANANA_500, $BANANA_700, $weight: 50%);
     $success-color: $LIME_300;
     $warning-color: $BANANA_100;
     $warning-icon-color: $BANANA_500;
-}
 
-@function bg-color($level) {
-    @if $color-scheme == "light" {
-        // Inputs
-        @if $level == 0 {
-            @return $SILVER_100;
-        // Views
-        } @else if $level == 1 {
-            @return white;
-        // Background
-        } @else if $level == 2 {
-            @return $SILVER_100;
-        // Sidebars and inline toolbars
-        } @else if $level == 3 {
-            @return mix($SILVER_100, $SILVER_300, $weight: 75%);
-        // Titlebars and toolbars
-        } @else if $level == 4 {
-            @return $titlebar-color;
-        }
-    } @else if $color-scheme == "dark" {
-        @if $level == 0 {
-            @return mix($BLACK_300, $BLACK_500, $weight: 50%);
-        } @else if $level == 1 {
-            @return mix($BLACK_300, $BLACK_500, $weight: 25%);
-        } @else if $level == 2 {
-            @return $BLACK_500;
-        } @else if $level == 3 {
-            @return mix($BLACK_500, $BLACK_700, $weight: 90%);
-        } @else if $level == 4 {
-            @return mix($BLACK_500, $BLACK_700, $weight: 45%);
-        }
-    }
-}
+    $bg-color-0: mix($BLACK_300, $BLACK_500, $weight: 50%);
+    $bg-color-1: mix($BLACK_300, $BLACK_500, $weight: 25%);
+    $bg-color-2: $BLACK_500;
+    $bg-color-3: mix($BLACK_500, $BLACK_700, $weight: 90%);
+    $bg-color-4: mix($BLACK_500, $BLACK_700, $weight: 45%);
 
-// Disabled text, images, other foreground elements
-$insensitive-fg-color: mix($fg-color, bg_color(2), $weight: 50%);
+    $highlight-color: white;
+}
 
 @function shadow($level) {
     @if $color-scheme == "light" {

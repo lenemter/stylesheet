@@ -10,8 +10,8 @@
     &:selected,
     // GtkAssistant
     &.highlight {
-        background-color: bg_color(4);
-        color: $fg-color;
+        background-color: #{'@bg_color_4'};
+        color: #{'@fg_color'};
     }
 }
 
@@ -25,7 +25,7 @@
     &,
     list,
     .view {
-        background-color: bg_color(3);
+        background-color: #{'@bg_color_3'};
     }
 }
 
@@ -74,6 +74,6 @@ treeview.sidebar {
 
     entry.flat {
         // to match row selection
-        background-color: bg_color(4);
+        background-color: #{'@bg_color_4'};
     }
 }

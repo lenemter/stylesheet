@@ -1,7 +1,7 @@
 %menu {
-    background-color: bg_color(2);
+    background-color: #{'@bg_color_2'};
     border-radius: rem(6px);
-    color: $fg-color;
+    color: #{'@fg_color'};
 
     arrow {
         -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
@@ -30,7 +30,7 @@
         }
 
         &:disabled {
-            color: $insensitive-fg-color;
+            color: #{'@insensitive_fg_color'};
         }
     }
 }
@@ -44,7 +44,7 @@
     padding: rem(6px) rem(12px);
 
     &:disabled {
-        color: $insensitive-fg-color;
+        color: #{'@insensitive_fg_color'};
 
         .keycap {
             opacity: 0.7;

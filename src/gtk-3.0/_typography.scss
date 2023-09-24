@@ -122,7 +122,7 @@ label.h4,
     }
 
     &:backdrop {
-        color: $fg-color;
+        color: #{'@fg_color'};
         opacity: 0.6;
     }
 }
@@ -133,11 +133,11 @@ label.h4,
 }
 
 label:disabled {
-    color: $insensitive-fg-color;
+    color: #{'@insensitive_fg_color'};
 }
 
 .keycap {
-    background-color: bg-color(2);
+    background-color: #{'@bg_color_2'};
     background-image:
         linear-gradient(
             to bottom,
@@ -148,7 +148,7 @@ label:disabled {
     border-radius: rem(3px);
     box-shadow:
         outset-highlight(),
-        inset 0 -1px 0 0 bg-color(4),
+        inset 0 -1px 0 0 #{'@bg_color_4'},
         0 1px 2px rgba(black, 0.05);
     font-size: 85%;
     min-width: rem(12px);

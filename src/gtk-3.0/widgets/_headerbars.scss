@@ -22,7 +22,7 @@ window {
 
         @extend %outset-background;
         background-color: #{"@color_primary"};
-        color: $fg-color;
+        color: #{'@fg_color'};
 
         .title {
             // Cannot be a number or fonts break in Flatpak
@@ -167,7 +167,7 @@ dialog.csd,
 messagedialog.csd,
 message-dialog.csd {
     > .titlebar {
-       background-color: bg_color(2);
+       background-color: #{'@bg_color_2'};
        box-shadow: outset-highlight("top");
        padding: rem(6px);
 

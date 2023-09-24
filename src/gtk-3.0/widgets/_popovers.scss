@@ -38,16 +38,16 @@ popover {
         &.top {
             background:
                 linear-gradient(
-                    bg_color(2) 0%,
-                    rgba(bg_color(2), 0) 50%
+                    #{'@bg_color_2'} 0%,
+                    #{'alpha(@bg_color_2, 0)'} 50%
                 );
         }
 
         &.bottom {
             background:
                 linear-gradient(
-                    rgba(bg_color(2), 0) 50%,
-                    bg_color(2) 100%
+                    #{'alpha(@bg_color_2, 0)'} 50%,
+                    #{'@bg_color_2'} 100%
                 );
         }
     }

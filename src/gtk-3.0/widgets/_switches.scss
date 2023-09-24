@@ -44,7 +44,7 @@ switch {
 
     slider {
         @extend %outset-background;
-        background-color: bg-color(0);
+        background-color: #{'@bg_color_0'};
         background-clip: padding-box;
         border-radius: 99px;
         box-shadow:
@@ -80,7 +80,7 @@ switch {
         box-shadow: inset-shadow("disabled");
 
         slider {
-            background-color: bg-color(3);
+            background-color: #{'@bg_color_3'};
             box-shadow:
                 outset-highlight("full"),
                 0 0 0 1px rgba(black, 0.15),

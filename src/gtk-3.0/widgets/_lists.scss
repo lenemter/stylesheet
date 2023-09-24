@@ -1,5 +1,5 @@
 list {
-    background-color: bg-color(1);
+    background-color: #{'@bg_color_1'};
 
     popover & {
         background-color: transparent;
@@ -8,7 +8,7 @@ list {
     row {
         &:focus,
         &:selected {
-            background: rgba($fg-color, 0.15);
+            background: #{'alpha(@fg_color, 0.15)'};
         }
 
         &:focus:selected {
@@ -32,7 +32,7 @@ list {
         list.nested > row:not(:active) {
             &:not(:hover):not(:selected),
             &:hover:not(.activatable):not(:selected) {
-                background-color: mix(bg-color(1), bg-color(2), $weight: 50%);
+                background-color: #{'mix(@bg_color_1, @bg_color_2, 0.5)'};;
             }
         }
 
@@ -42,12 +42,12 @@ list {
             &:not(.expander):not(:active):hover:not(.activatable):not(:selected),
             &.expander row.header:not(:active):not(:hover):not(:selected),
             &.expander row.header:not(:active):hover:not(.activatable):not(:selected) {
-                background-color: bg-color(1);
+                background-color: #{'@bg_color_1'};
             }
 
             &:not(.expander):not(:active):hover.activatable:not(:selected),
             &.expander row.header:not(:active):hover.activatable:not(:selected) {
-                background-color: mix(bg-color(1), bg-color(2), $weight: 50%);
+                background-color: #{'mix(@bg_color_1, @bg_color_2, 0.5)'};
             }
 
             &,

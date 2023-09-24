@@ -1,7 +1,7 @@
 check,
 radio {
     @extend %outset-background;
-    background-color: bg-color(0);
+    background-color: #{'@bg_color_0'};
     border: 1px solid $border-color;
     box-shadow:
         outset-highlight(),
@@ -23,7 +23,7 @@ radio {
 
         &:backdrop:not(:disabled):not(.colorbutton) {
             background-image: none;
-            background-color: bg-color(4);
+            background-color: #{'@bg_color_4'};
             -gtk-icon-shadow: 0 1px 1px $border-color;
         }
     }
@@ -31,7 +31,7 @@ radio {
     &:disabled {
         background: $insensitive-base-color;
         box-shadow: 0 1px 0 0 #{'alpha (@bg_highlight_color, 0.3)'};
-        color: $insensitive-fg-color;
+        color: #{'@insensitive_fg_color'};
         -gtk-icon-shadow: 0 1px 1px #{'alpha (@bg_highlight_color, 0.3)'};
     }
 
@@ -86,8 +86,8 @@ checkbutton {
         color: #{'@selected_fg_color'};
 
         &:backdrop {
-            background: rgba($fg-color, 0.05);
-            border-color: rgba($fg-color, 0.25);
+            background: #{'alpha(@fg_color, 0.05)'};
+            border-color: #{'alpha(@fg_color, 0.25)'};
             color: inherit;
         }
     }

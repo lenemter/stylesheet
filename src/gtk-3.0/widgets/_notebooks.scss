@@ -51,13 +51,13 @@ notebook {
             }
 
             &:disabled {
-                color: $insensitive-fg-color;
+                color: #{'@insensitive_fg_color'};
             }
         }
     }
 
     viewport {
-        background-color: bg-color(1);
+        background-color: #{'@bg_color_1'};
     }
 }
 

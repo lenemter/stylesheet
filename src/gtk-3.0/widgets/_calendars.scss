@@ -9,7 +9,7 @@ calendar {
 
     // Month headers
     .highlight {
-        color: mix($fg-color, bg-color(1), $weight: 80%);
+        color: #{'mix(@fg_color, @bg_color_1, 0.8)'};
     }
 
     &:selected{
@@ -19,7 +19,7 @@ calendar {
 
     // Other month days
     &:indeterminate {
-        color: mix($fg-color, bg-color(1), $weight: 50%);
+        color: #{'mix(@fg_color, @bg_color_1, 0.5)'};
     }
 }
 

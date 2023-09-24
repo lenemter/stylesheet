@@ -11,7 +11,7 @@ iconview.view.cell {
     border-radius: rem(3px);
 
     &:selected {
-        background: rgba($fg-color, 0.15);
+        background: #{'alpha(@fg_color, 0.15)'};
     }
 
     &:focus:selected {
@@ -24,7 +24,7 @@ flowboxchild {
 
     &:focus,
     &:selected {
-        background: rgba($fg-color, 0.15);
+        background: #{'alpha(@fg_color, 0.15)'};
     }
 
     &:focus:selected {
@@ -41,12 +41,12 @@ scrolledwindow {
 
 .view {
     background: #{'@base_color'};
-    color: $fg-color;
+    color: #{'@fg_color'};
     -gtk-secondary-caret-color: #{'@selected_bg_color'};
 
     &:disabled {
         background: $insensitive-base-color;
-        color: $insensitive-fg-color;
+        color: #{'@insensitive_fg_color'};
     }
 }
 
