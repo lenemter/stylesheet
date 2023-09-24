@@ -8,8 +8,7 @@
 // The primary brand color used for titlebars
 @define-color color_primary #{$titlebar-color};
 
-// Placeholder text in entries. Doesn't respect alpha
-@define-color placeholder_text_color #{'mix(@fg_color, @bg_color_1, 0.25)'};
+@define-color placeholder_text_color #{'alpha(@fg_color, 0.75)'};
 
 // Semantic colors
 @define-color error_color #{"" + $error-color};
