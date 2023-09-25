@@ -52,7 +52,7 @@ list {
 
             &,
             list > row {
-                border-color: $border-color;
+                border-color: #{'@border_color'};
                 border-style: solid;
                 transition: duration("open") $easing;
             }

@@ -20,7 +20,7 @@
 
     @if $color-scheme == "dark" {
         background-clip: padding-box;
-        border-color: $toplevel-border-color;
+        border-color: #{'@toplevel_border_color'};
     }
 
     &.flat,

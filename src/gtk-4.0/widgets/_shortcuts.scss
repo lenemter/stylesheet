@@ -21,7 +21,7 @@ accelerator,
             rgba(white, 0),
             #{'alpha(@highlight_color, 0.2)'}
         );
-    border: 1px solid $toplevel-border-color;
+    border: 1px solid #{'@toplevel_border_color'};
     border-radius: rem(3px);
     box-shadow:
         outset-highlight(),

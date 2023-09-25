@@ -9,14 +9,14 @@ window {
         border-radius: rem(6px);
         box-shadow:
             // Intentionally not in ems since it's used as a stroke
-            0 0 0 1px $toplevel-border-color,
+            0 0 0 1px #{'@toplevel_border_color'},
             // Force shadows to be the same size to prevent jumpy resize transition
             0 13px 16px 4px transparent,
             shadow(4);
 
         &:backdrop {
             box-shadow:
-                0 0 0 1px $toplevel-border-color,
+                0 0 0 1px #{'@toplevel_border_color'},
                 // Force shadows to be the same size to prevent jumpy resize transition
                 0 13px 16px 4px transparent,
                 shadow(2);
@@ -30,7 +30,7 @@ window {
         &.tiled-right:not(.maximized),
         &.tiled-left:not(.maximized) {
             box-shadow:
-                0 0 0 1px $toplevel-border-color,
+                0 0 0 1px #{'@toplevel_border_color'},
                 0 13px 16px 4px transparent,
                 shadow(2);
         }
@@ -62,7 +62,7 @@ window {
 
     &.ssd {
         border-radius: 6px 6px 0 0;
-        box-shadow: 0 0 0 1px $toplevel-border-color;
+        box-shadow: 0 0 0 1px #{'@toplevel_border_color'};
     }
 }
 
@@ -75,7 +75,7 @@ window.dialog {
         box-shadow:
             outset-highlight(),
             // Intentionally not in ems since it's used as a stroke
-            0 0 0 1px $toplevel-border-color,
+            0 0 0 1px #{'@toplevel_border_color'},
             // Force shadows to be the same size to prevent jumpy resize transition
             0 13px 16px 4px transparent,
             shadow(3);
@@ -84,7 +84,7 @@ window.dialog {
             box-shadow:
                 outset-highlight(),
                 // Intentionally not in ems since it's used as a stroke
-                0 0 0 1px $toplevel-border-color,
+                0 0 0 1px #{'@toplevel_border_color'},
                 // Force shadows to be the same size to prevent jumpy resize transition
                 0 13px 16px 4px transparent,
                 shadow(2);

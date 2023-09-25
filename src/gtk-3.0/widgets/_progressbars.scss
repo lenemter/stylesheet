@@ -3,7 +3,7 @@ progressbar {
 
     progress,
     trough {
-        border: 1px solid $border-color;
+        border: 1px solid #{'@border_color'};
         border-radius: rem(2px);
     }
 

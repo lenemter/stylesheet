@@ -55,7 +55,7 @@ headerbar {
 
     revealer headerbar {
         // Box shadow can't overlay content
-        border-bottom: 1px solid $toplevel-border-color;
+        border-bottom: 1px solid #{'@toplevel_border_color'};
         border-radius: rem(6px) rem(6px) 0 0;
         box-shadow: outset-highlight("full");
         padding: rem(6px);
@@ -98,7 +98,7 @@ headerbar {
     // SSD doesn't calculate rems correctly
     .ssd & {
         // Box shadow can't overlay content
-        border-bottom: 1px solid $toplevel-border-color;
+        border-bottom: 1px solid #{'@toplevel_border_color'};
         border-radius: 6px 6px 0 0;
         box-shadow: outset-highlight("full");
         padding: 3px;

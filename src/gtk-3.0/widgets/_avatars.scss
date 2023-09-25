@@ -99,7 +99,7 @@ avatar {
     }
 
     &.image {
-        border-color: $border-color;
+        border-color: #{'@border_color'};
         background: none;
     }
 

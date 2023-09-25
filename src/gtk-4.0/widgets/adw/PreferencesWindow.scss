@@ -18,7 +18,7 @@ window.preferences.csd {
         undershoot.top {
             background:
                 linear-gradient(
-                    $toplevel-border-color,
+                    #{'@toplevel_border_color'},
                     rgba(black, 0.05) 1px,
                     rgba(black, 0.0) 0.444rem
                 );

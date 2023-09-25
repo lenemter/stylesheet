@@ -4,7 +4,7 @@ infobar {
         background-image: -gtk-icontheme("dialog-information-symbolic");
         background-repeat: no-repeat;
         background-size: 16px;
-        border-color: $border-color;
+        border-color: #{'@border_color'};
         border-style: solid;
         border-width: 0 0 1px;
         box-shadow: outset-highlight("bottom");

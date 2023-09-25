@@ -71,7 +71,7 @@ popover.background {
     > contents {
         background-clip: padding-box;
         background-color: #{'@bg_color_2'};
-        border: 1px solid $toplevel-border-color;
+        border: 1px solid #{'@toplevel_border_color'};
         box-shadow:
             outset-highlight(),
             shadow(2);

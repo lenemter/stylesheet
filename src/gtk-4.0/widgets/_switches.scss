@@ -1,6 +1,6 @@
 switch {
     background-color: rgba(black, 0.05);
-    border: 1px solid $border-color;
+    border: 1px solid #{'@border_color'};
     box-shadow: inset-shadow();
     border-radius: rem(16px);
     transition: all duration("in-place") $easing;
@@ -49,7 +49,7 @@ switch {
         border-radius: 99px;
         box-shadow:
             outset-highlight("full"),
-            0 0 0 1px $border-color,
+            0 0 0 1px #{'@border_color'},
             outset-shadow(3);
         min-height: rem(24px);
         min-width: rem(24px);

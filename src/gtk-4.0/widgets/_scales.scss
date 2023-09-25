@@ -38,7 +38,7 @@ scale {
         border-radius: rem(12px);
         box-shadow:
             outset-highlight(),
-            0 0 0 1px $border-color,
+            0 0 0 1px #{'@border_color'},
             0 1px 1px 1px rgba(black, 0.1);
         min-height: rem(14px);
         min-width: rem(14px);
@@ -59,7 +59,7 @@ scale {
     }
 
     trough {
-        border: 1px solid $border-color;
+        border: 1px solid #{'@border_color'};
         border-radius: rem(12px);
         background-color: rgba(black, 0.05);
         box-shadow:
@@ -232,13 +232,13 @@ scale {
             box-shadow:
                 outset-highlight("full"),
                 0 0 0 rem(3px) #{'alpha(@accent_color, 0.3)'},
-                0 0 0 1px $border-color,
+                0 0 0 1px #{'@border_color'},
                 0 0 0 1px #{'@accent_color'};
         } @else {
             box-shadow:
                 outset-highlight("full"),
                 0 0 0 rem(3px) #{'alpha(@accent_color, 0.3)'},
-                0 0 0 1px $border-color;
+                0 0 0 1px #{'@border_color'};
         }
     }
 }

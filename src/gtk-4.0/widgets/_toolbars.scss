@@ -3,7 +3,7 @@
     background-image:
         linear-gradient(
             to bottom,
-            $border-color 1px,
+            #{'@border_color'} 1px,
             rgba(black, 0.07) 1px,
             transparent rem(3px)
         );
@@ -13,7 +13,7 @@
         background-image:
             linear-gradient(
                 to bottom,
-                $border-color 1px,
+                #{'@border_color'} 1px,
                 rgba(black, 0.04) 1px,
                 transparent rem(3px)
             );

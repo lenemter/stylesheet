@@ -107,13 +107,13 @@ window.popup {
     decoration {
         border-radius: rem(6px);
         box-shadow:
-            0 0 0 1px $toplevel-border-color,
+            0 0 0 1px #{'@toplevel_border_color'},
             shadow(2);
     }
 
     window.popup decoration {
         box-shadow:
-            0 0 0 1px $toplevel-border-color,
+            0 0 0 1px #{'@toplevel_border_color'},
             shadow(3);
     }
 

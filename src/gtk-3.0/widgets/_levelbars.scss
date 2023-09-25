@@ -1,7 +1,7 @@
 levelbar {
     block {
         background-color: #{'@accent_color_300'};
-        border: 1px solid $border-color;
+        border: 1px solid #{'@border_color'};
         border-radius: rem(6px);
         box-shadow:
             outset-highlight(),

@@ -64,7 +64,7 @@ infobar {
 
             @if $color-scheme == "dark" {
                 background-clip: padding-box;
-                border-color: $border-color;
+                border-color: #{'@border_color'};
             }
         }
     }

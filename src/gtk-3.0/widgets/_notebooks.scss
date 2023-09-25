@@ -1,5 +1,5 @@
 %tabheader {
-    background-color: #{'shade (@tab_base_color, 0.95)'};
+    background-color: #{'@tab_base_color'};
 
     @if $color-scheme == "dark" {
         background-color: #{'shade (@tab_base_color, 0.87)'};

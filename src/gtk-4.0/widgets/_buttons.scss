@@ -40,7 +40,7 @@ button {
 
         background-clip: padding-box;
         background-color: #{'@bg_color_0'};
-        border: 1px solid $border-color;
+        border: 1px solid #{'@border_color'};
         box-shadow:
             outset-highlight("full"),
             outset-shadow(2);
@@ -55,7 +55,7 @@ button {
             &:focus {
                 @if $color-scheme == "light" {
                     background-clip: border-box;
-                    border: 1px solid $border-color;
+                    border: 1px solid #{'@border_color'};
                 } @else if $color-scheme == "dark" {
                     &.keyboard-activating,
                     &:active,
@@ -82,7 +82,7 @@ button {
                 border-color: #{'alpha(mix(black, @accent_color, 0.9), 0.5)'};
 
                 &:backdrop {
-                    border-color: $border-color;
+                    border-color: #{'@border_color'};
                 }
             }
 

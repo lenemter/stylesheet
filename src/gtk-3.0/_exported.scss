@@ -33,8 +33,6 @@
 
     @define-color selected_bg_color #{'alpha(shade(@accent_color, 0.85), 0.5)'};
     @define-color selected_fg_color #{'mix(shade(@accent_color, 1.1), white, 0.75)'};
-
-    @define-color tab_base_color #{'@bg_color_2'};
 }
 
 // Used primarily for views and entries
@@ -50,8 +48,10 @@
 @define-color bg_color_4 #{"" + $bg-color-4};
 
 // Outset box shadow or border color on toplevel elements like windows, menus, popovers
-@define-color borders #{"" + $toplevel-border-color};
-@define-color unfocused_borders #{"" + $toplevel-border-color};
+@define-color toplevel_border_color #{"" + $toplevel-border-color};
+
+// Outset box shadow or border color on inputs like buttons, entries, checkboxes
+@define-color border_color #{"" + $border-color};
 
 @define-color bg_color #{'@bg_color_2'};
 @define-color theme_bg_color #{'@bg_color_2'};

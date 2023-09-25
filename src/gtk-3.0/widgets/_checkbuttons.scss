@@ -2,7 +2,7 @@ check,
 radio {
     @extend %outset-background;
     background-color: #{'@bg_color_0'};
-    border: 1px solid $border-color;
+    border: 1px solid #{'@border_color'};
     box-shadow:
         outset-highlight(),
         outset-shadow(1);
@@ -24,7 +24,7 @@ radio {
         &:backdrop:not(:disabled):not(.colorbutton) {
             background-image: none;
             background-color: #{'@bg_color_4'};
-            -gtk-icon-shadow: 0 1px 1px $border-color;
+            -gtk-icon-shadow: 0 1px 1px #{'@border_color'};
         }
     }
 

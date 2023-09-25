@@ -3,7 +3,7 @@ window.notification .draw-area {
     border-radius: rem(6px);
     box-shadow:
         outset-highlight(),
-        0 0 0 1px $toplevel-border-color,
+        0 0 0 1px #{'@toplevel_border_color'},
         shadow(3);
 
     image {

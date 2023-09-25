@@ -43,8 +43,10 @@
 @define-color insensitive_base_color #{"" + $insensitive-base-color};
 
 // Outset box shadow or border color on toplevel elements like windows, menus, popovers
-@define-color borders #{"" + $toplevel-border-color};
-@define-color unfocused_borders #{"" + $toplevel-border-color};
+@define-color toplevel_border_color #{"" + $toplevel-border-color};
+
+// Outset box shadow or border color on inputs like buttons, entries, checkboxes
+@define-color border_color #{"" + $border-color};
 
 @define-color bg_color_0 #{"" + $bg-color-0};
 @define-color bg_color_1 #{"" + $bg-color-1};

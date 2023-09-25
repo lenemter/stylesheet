@@ -39,7 +39,7 @@ viewswitcherbar {
     }
 
     revealer > box {
-        border-top: 1px solid $toplevel-border-color;
+        border-top: 1px solid #{'@toplevel_border_color'};
 
         viewswitcher button {
             margin: 0;
