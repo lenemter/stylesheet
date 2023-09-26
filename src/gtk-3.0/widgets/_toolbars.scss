@@ -21,7 +21,7 @@
     }
 
     .sidebar & {
-        background-color: #{'mix(@bg_color_3, @bg_color_4, 0.5)'};
+        background-color: $bg-accent-color-darker;
         background-image:
             linear-gradient(
                 to bottom,

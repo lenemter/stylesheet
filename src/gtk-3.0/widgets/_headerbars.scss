@@ -21,7 +21,7 @@ window {
         }
 
         @extend %outset-background;
-        background-color: #{"@color_primary"};
+        background-color: $bg-accent-color;
         color: #{'@fg_color'};
 
         .title {

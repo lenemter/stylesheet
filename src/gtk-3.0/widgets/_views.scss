@@ -32,10 +32,14 @@ flowboxchild {
     }
 }
 
-scrolledwindow {
+scrolledwindow > viewport {
     // avoid double borders when viewport inside scrolled window
-    > viewport.frame {
+    &.frame {
         border-style: none;
+    }
+
+    listbox, list {
+        background-color: $bg-accent-color;
     }
 }
 
